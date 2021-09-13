@@ -4,3 +4,10 @@ En el archivo demo.js se hace uso de la libería web3 para poder interactuar con
 
 En el archivo config se deben declarar las claves privadas de las cuentas que se quieren importar en formato hexadecimal. Más info en la [documentación oficial](https://geth.ethereum.org/docs/interface/managing-your-accounts).
 
+## Uso
+
+- cd geth-connection-example
+
+- npm install
+
+- node demo.js
