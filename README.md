@@ -1,4 +1,4 @@
-# Ejempo conexión con un nodo cliente Geth ejecutando en local para el Experto Universitario en Blockchain de la Universidad Europea
+# Ejempo conexión con un nodo cliente Geth ejecutando en local para la Universidad Europea
 
 En el archivo demo.js se hace uso de la libería web3 para poder interactuar con un cliente de Ethereum. La conexión se realiza en local a través de comunicación RPC.
 
