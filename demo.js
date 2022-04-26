@@ -3,17 +3,9 @@ const Web3 = require('web3'),
 
 const web3 = new Web3(new Web3.providers.HttpProvider('http://127.0.0.1:8545'))
 
-// Check connection
-if (web3) {
-    console.log("Successfully connected to local Geth node \n")
-} else {
-    console.log("Problem connecting to local Geth node \n")
-}
-
 // Get the network identificator
 web3.eth.net.getId().then((result) => {
     console.log("Connected to network with id: " + result + '\n')
-
 })
 
 // Get the current block number
@@ -47,6 +39,7 @@ web3.eth.getBalance(defaultAccount2.address, function (err, result) {
     }
 })
 
+
 // Send 0,01 Ether (10000000000000000 Wei) from one account to another
 web3.eth.sendTransaction({
     from: defaultAccount1.address,
@@ -55,7 +48,7 @@ web3.eth.sendTransaction({
     to: defaultAccount2.address,
     value: "10000000000000000",
     data: ""
-}, 'Pass1234')
+}, 'Temporal1234')
     .on('transactionHash', (txHash) => {
         console.log(`Transfer successfully sent. Waiting for mining. Transaction hash: ${JSON.stringify(txHash)} \n`);
     })
@@ -78,5 +71,3 @@ web3.eth.sendTransaction({
             }
         })
     });
-
-
